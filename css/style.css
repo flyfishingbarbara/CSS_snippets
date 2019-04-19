@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+h1 {
+  position: absolute;
+  color: red;
+  animation: grow 2s infinite;
+}
+
+.box {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  height: 600px;
+  width: 600px;
+  border-radius: 5%;
+}
+
+.right_ear {
+  width: 10%;
+  height: 20%;
+  background-color: #fff7ec;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+}
+
+.egg {
+  display: block;
+  width: 126px;
+  height: 180px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.screw {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: inset 0px -5px 4px #000, inset 0px 2px 2px rgba(255, 255, 255, 0.7);
+  border: 2px solid #777;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  4% {
+    transform: scale(2.5);
+    color: blue;
+  }
+  10% {
+    transform: scale(1.5);
+    color: blue;
+  }
+  100% {
+    transform: scale(1.5);
+    color: red;
+  }
+}
